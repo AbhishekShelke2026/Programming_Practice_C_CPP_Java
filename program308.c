@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void DisplayBinary(int iNo)
+{
+    int iDigit = 0;
+
+    printf("Binary Conversion is \n");
+
+    while(iNo != 0)
+    {
+        iDigit = iNo % 2;
+        printf("%d",iDigit);
+        iNo = iNo / 2;
+    }
+
+    printf("\n");
+    
+}
+
+int main()
+{
+    int ivalue = 0;
+
+    printf("Enter the number : \n");
+    scanf("%d",&ivalue);
+
+    DisplayBinary(ivalue);
+
+
+    return 0;
+}
